@@ -64,6 +64,8 @@ function calcularImc(altura, peso){
 function limparInputs(){
     inputAltura.value = "";
     inputPeso.value = "";
+    imcValor.classList = "";
+    imcStatus.classList = "";
 }
 
 //função pra limitar digitar só números nos campos de input
@@ -137,6 +139,29 @@ btnCalcular.addEventListener("click", (evento) =>{
 
     imcValor.innerText = valorImc;
     imcStatus.innerText = status;
+
+    switch (status) {
+        case "Magreza":
+            imcValor.classList.add("baixo");
+            imcStatus.classList.add("baixo");
+            break;
+        case "Normal":
+            imcValor.classList.add("normal");
+            imcStatus.classList.add("normal"); 
+            break;       
+        case "Sobrepeso":
+            imcValor.classList.add("medio");
+            imcStatus.classList.add("medio");
+            break;
+        case "Obesidade":
+            imcValor.classList.add("ruim");
+            imcStatus.classList.add("ruim");
+            break;
+        case "Obesidade grave":
+            imcValor.classList.add("ruim");
+            imcStatus.classList.add("ruim");
+            break;
+    }
 
     mostrarOuEsconderContainer();
 });

@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #090E22;
+    background-color: #191a1f;
     color: #FFF;
     height: 100vh;
     display: flex;
@@ -19,7 +19,7 @@ body{
 }
 /*Janela para informar os dados do IMC*/
 .container{
-    background-color: #1D1E33;
+    background-color: #41424e;
     width: 400px;
     height: 470px;
     padding: 2rem;
@@ -75,7 +75,7 @@ body{
 }
 
 #btn-limpar{
-    background-color: #444;
+    background-color: #191a1f;
 }
 /*Janela do resultado do IMC*/
 #container-resultado{
@@ -122,18 +122,18 @@ body{
     flex-grow: 0;
 }
 
-.magro{
-    color: #12DB34;
-}
-
-.normal{
+.baixo{
     color: #DBCE12;
 }
 
-.sobrepeso{
+.normal{
+    color: #12DB34;
+}
+
+.medio{
     color: #DB6212;
 }
 
-.obesidade{
+.ruim{
     color: #DB1912;
 }
