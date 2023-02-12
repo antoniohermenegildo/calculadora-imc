@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #090E22;
+    color: #FFF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.esconder{
+    display: none !important;
+}
+/*Janela para informar os dados do IMC*/
+.container{
+    background-color: #1D1E33;
+    width: 400px;
+    height: 470px;
+    padding: 2rem;
+
+}
+
+.titulo{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pergunta{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.legenda{
+    font-weight: bold;
+    color: #CCC;
+}
+
+.campo{
+    padding: 1rem 0.5rem;
+}
+
+.btns{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    color: #FFF;
+    background-color: #BB332F;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    opacity: 0.8;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+#btn-limpar{
+    background-color: #444;
+}
+/*Janela do resultado do IMC*/
+#container-resultado{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-valor{
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-status{
+    font-size: 1.4rem;
+    color: #CCC;
+}
+
+.titulo-tabela{
+    margin-top: 1rem;
+    color: #DFDFDF;
+}
+
+#tabela-imc{
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.tabela-cabecalho{
+    font-weight: bold;
+    color: #CCC;
+}
+
+.tabela-linha{
+    display: grid;
+    grid-template-columns: 38% 38% 24%;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #444;
+}
+
+#btn-voltar{
+    align-self: center;
+    flex-grow: 0;
+}
+
+.magro{
+    color: #12DB34;
+}
+
+.normal{
+    color: #DBCE12;
+}
+
+.sobrepeso{
+    color: #DB6212;
+}
+
+.obesidade{
+    color: #DB1912;
+}
